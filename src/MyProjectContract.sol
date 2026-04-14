@@ -7,6 +7,7 @@ contract MyProjectContract {
     function set(uint256 _value) public {
         storedValue = _value;
     }
+
     function get() public view returns (uint256) {
         return storedValue;
     }

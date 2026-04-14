@@ -10,13 +10,14 @@ contract MyProjectContractTest is Test {
     function setUp() public {
         projectContract = new MyProjectContract();
     }
- function testInitialValueIsZero() public {
-    uint256  value =  projectContract.get();
-    assertEq(value, 0);
- }
 
- function testSetValue() public {
-    projectContract.set(10);
-    assertEq(projectContract.get(),10);
- }
+    function testInitialValueIsZero() public {
+        uint256 value = projectContract.get();
+        assertEq(value, 0);
+    }
+
+    function testSetValue() public {
+        projectContract.set(10);
+        assertEq(projectContract.get(), 10);
+    }
 }
